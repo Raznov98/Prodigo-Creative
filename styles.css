@@ -1,0 +1,1245 @@
+
+/* home home home home home home home home */
+/* home home home home home home home home */
+/* home home home home home home home home */
+/* home home home home home home home home */
+
+
+
+
+/* Reset default margin, padding, and enable box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set a consistent font */
+}
+
+/* Ensure body takes up at least the full height of the viewport */
+body {
+  min-height: 100vh;
+}
+
+/* Navigation Bar Styling */
+nav {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items apart */
+  align-items: center; /* Center items vertically */
+  padding: 15px 20px; /* Adjust padding for better spacing */
+  background: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+  position: fixed; /* Fix the navbar at the top */
+  width: 100%; /* Full width */
+  top: 0; /* Position at the top */
+  z-index: 1000; /* Ensure navbar stays above other elements */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+}
+
+/* Logo Styling */
+.logo img {
+  height: 50px; /* Adjust height as needed */
+  width: auto; /* Maintain aspect ratio */
+}
+
+
+/* Navigation Links */
+.nav-links {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align links vertically */
+  gap: 25px; /* Add spacing between links */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Styling for each navigation link */
+.nav-links a {
+  text-decoration: none; /* Remove default underline */
+  color: #333; /* Default text color */
+  font-weight: 500; /* Medium font weight */
+  position: relative; /* Needed for hover effect */
+  transition: color 0.3s ease; /* Smooth color transition */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Underline effect for links on hover */
+.nav-links a::after {
+  content: ''; /* Create an empty pseudo-element */
+  position: absolute; /* Position it relative to the link */
+  width: 0; /* Initially no width */
+  height: 2px; /* Height of the underline */
+  background: #4CAF50; /* Green underline */
+  bottom: -5px; /* Position below the text */
+  left: 0; /* Align with the left */
+  transition: width 0.3s ease; /* Smooth transition */
+}
+
+/* Expand the underline when hovering over the link */
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Change text color on hover */
+.nav-links a:hover {
+  color: #4CAF50;
+}
+
+/* Call-to-Action (CTA) Button */
+.cta-button {
+  background: #4CAF50; /* Green background */
+  color: white !important; /* Force white text */
+  padding: 10px 25px; /* Adjust padding */
+  border-radius: 25px; /* Rounded button */
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+  margin-left: 15px; /* Space from other elements */
+}
+
+/* Lift the button slightly when hovered */
+.cta-button:hover {
+  transform: translateY(-2px); /* Move up by 2px */
+}
+
+/* Remove the underline hover effect from CTA button */
+.cta-button::after {
+  display: none;
+}
+
+
+
+
+
+
+/* home home home home home home home home */
+/* home home home home home home home home */
+/* home home home home home home home home */
+/* home home home home home home home home */
+
+
+
+
+
+/* whatsapp whatsapp whatsapp whatsapp whatsapp whatsapp whatsapp whatsapp */
+/* whatsapp whatsapp whatsapp whatsapp whatsapp whatsapp whatsapp whatsapp */
+/* whatsapp whatsapp whatsapp whatsapp whatsapp whatsapp whatsapp whatsapp */
+/* whatsapp whatsapp whatsapp whatsapp whatsapp whatsapp whatsapp whatsapp */
+
+
+
+
+
+
+
+
+/* In your CSS - modify the existing .whatsapp-button styles */
+/* WhatsApp Button Styling */
+.whatsapp-button {
+  background: #00d838; /* WhatsApp green color */
+  color: white !important; /* Ensure white text */
+  padding: 10px 25px; /* Padding for better spacing */
+  border-radius: 25px; /* Rounded button */
+  transition: all 0.3s ease; /* Smooth transition for effects */
+  margin-left: 15px; /* Space from other elements */
+  display: inline-flex; /* Inline-flex to keep button inline while using flex properties */
+  align-items: center; /* Center items (icon and text) vertically */
+  gap: 8px; /* Space between the icon and text */
+  position: relative; /* Relative positioning for potential adjustments */
+  min-width: 140px; /* Ensure a minimum width */
+  justify-content: center; /* Center content horizontally */
+}
+
+/* Hover Effect for WhatsApp Button */
+.whatsapp-button:hover {
+  background: #25D366; /* Keep the same green color */
+  color: white !important; /* Maintain white text */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Add a slight shadow effect */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Responsive Styling for Mobile Screens */
+@media (max-width: 768px) {
+  .whatsapp-button {
+    width: auto; /* Allow natural width */
+    margin: 10px 20px 0 20px; /* Add margin for spacing */
+    padding: 12px 30px; /* Increase padding for better touch interaction */
+    display: flex; /* Ensure flexbox behavior */
+    justify-content: center; /* Center content horizontally */
+  }
+
+  /* Optional: Make the button full width on mobile */
+  /* .whatsapp-button {
+    width: calc(100% - 40px); 
+  } */
+}
+
+/* Ensure the WhatsApp Icon (SVG) Maintains Proper Size */
+.whatsapp-button svg {
+  width: 20px; /* Set a fixed width */
+  height: 20px; /* Set a fixed height */
+  flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+
+
+
+
+
+
+
+
+/* home home home home home home home home */
+/* home home home home home home home home */
+/* home home home home home home home home */
+/* home home home home home home home home */
+
+
+
+
+/* slider slider slider slider slider slider slider slider */
+/* slider slider slider slider slider slider slider slider */
+/* slider slider slider slider slider slider slider slider */
+/* slider slider slider slider slider slider slider slider */
+
+
+
+
+
+
+
+/* Slider Container - The main wrapper for the slider */
+.slider-container {
+  margin-top: 60px; /* Creates space above the slider */
+  overflow: hidden; /* Ensures slides don’t overflow */
+  position: relative; /* Needed for absolute positioning of child elements */
+  height: 70vh; /* Sets slider height to 70% of the viewport height */
+  background: #f5f5f5; /* Light gray background */
+}
+
+/* Track that holds all slides */
+.slider-track {
+  display: flex; /* Lays slides out in a row */
+  transition: transform 0.5s ease-in-out; /* Smooth sliding animation */
+  height: 100%; /* Ensures full height */
+}
+
+/* Individual slides */
+.slide {
+  flex: 0 0 100%; /* Each slide takes full width */
+  min-width: 100%; /* Prevents shrinking */
+  height: 100%; /* Full height of container */
+  display: flex; /* Enables flex alignment */
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease-in-out; /* Fade-in effect */
+  position: relative; /* Allows positioning of slide content */
+  background-size: cover; /* Ensures images cover the slide */
+  background-position: center center; /* Centers background images */
+}
+
+/* Active slide becomes visible */
+.slide.active {
+  opacity: 1;
+}
+
+/* Assign background images to each slide */
+.slide:nth-child(1) { background-image: url('1.jpg'); }
+.slide:nth-child(2) { background-image: url('2.jpg'); }
+.slide:nth-child(3) { background-image: url('3.jpg'); }
+.slide:nth-child(4) { background-image: url('4.jpg'); } 
+
+/* Content Overlay on Slide */
+.slide-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem; /* Adds spacing inside content */
+  background: linear-gradient(transparent, rgba(0,0,0,0.7)); /* Fades to dark */
+  color: white; /* Makes text readable */
+  z-index: 1; /* Ensures content is above the image */
+}
+
+/* Slide Heading */
+.slide-content h2 {
+  font-size: 1.8em; /* Larger font for headings */
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Adds text shadow for readability */
+}
+
+/* Slide Paragraph */
+.slide-content p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+/* Dots (Indicators) Below the Slider */
+.slider-indicators {
+  position: absolute;
+  bottom: 10px; /* Positions indicators near bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Centers indicators */
+  display: flex;
+  gap: 5px; /* Adds space between indicators */
+}
+
+/* Individual Dot */
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%; /* Makes dots circular */
+  background: rgba(255,255,255,0.5); /* Semi-transparent white */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Active dot appears brighter */
+.indicator.active {
+  background: rgba(255,255,255,0.9);
+}
+
+/* Automatic Sliding Animation */
+@keyframes slideAnimation {
+  0%, 20% { opacity: 1; transform: translateX(0); }
+  25%, 45% { opacity: 1; transform: translateX(-100%); } 
+  50%, 70% { opacity: 1; transform: translateX(-200%); } 
+  75%, 95% { opacity: 1; transform: translateX(-300%); } 
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Responsive Adjustments for Mobile Screens */
+@media (max-width: 768px) { 
+  .slider-container {
+    height: 50vh; /* Reduce height for smaller screens */
+  }
+
+  /* Reapply animation for mobile screens */
+  @keyframes slideAnimation {
+    0%, 20% { opacity: 1; transform: translateX(0); }
+    25%, 45% { opacity: 1; transform: translateX(-100%); } 
+    50%, 70% { opacity: 1; transform: translateX(-200%); } 
+    75%, 95% { opacity: 1; transform: translateX(-300%); } 
+    100% { opacity: 1; transform: translateX(0); }
+  }
+}
+
+/* Further Adjustments for Very Small Screens */
+@media (max-width: 480px) { 
+  .slide-content h2 { 
+    font-size: 1.5em; /* Slightly smaller heading */
+  }
+  .slide-content p { 
+    font-size: 0.8em; /* Smaller text */
+  }
+  .slide-content { 
+    padding: 1rem 0.5rem; /* Adjust padding for small screens */
+  }
+}
+
+
+
+
+
+
+
+/* home home home home home home home home */
+/* home home home home home home home home */
+/* home home home home home home home home */
+/* home home home home home home home home */
+
+/* hamburger hamburger hamburger hamburger hamburger hamburger hamburger hamburger */
+/* hamburger hamburger hamburger hamburger hamburger hamburger hamburger hamburger */
+/* hamburger hamburger hamburger hamburger hamburger hamburger hamburger hamburger */
+/* hamburger hamburger hamburger hamburger hamburger hamburger hamburger hamburger */
+
+
+
+
+
+
+
+/* Hamburger Menu Styles */
+/* HAMBURGER MENU BUTTON */
+.hamburger {
+  display: none; /* Hidden by default on larger screens */
+  cursor: pointer; /* Changes the cursor to indicate clickability */
+  z-index: 1001; /* Ensures it appears above other elements */
+}
+
+/* STYLING FOR THE THREE LINES OF THE HAMBURGER ICON */
+.bar {
+  display: block; /* Makes each line a block element */
+  width: 25px; /* Width of each bar */
+  height: 3px; /* Thickness of each bar */
+  margin: 5px auto; /* Centers bars and adds spacing */
+  background-color: #333; /* Dark grey color */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+  
+  /* Show the hamburger menu on smaller screens */
+  .hamburger {
+      display: block; 
+  }
+
+  /* HAMBURGER MENU ANIMATION */
+  /* Hides the middle bar when active */
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0; /* Makes the middle bar invisible */
+  }
+
+  /* Rotates the first bar to form the top part of the "X" */
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  /* Rotates the third bar to form the bottom part of the "X" */
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* NAVIGATION MENU STYLING */
+  .nav-links {
+      position: fixed; /* Makes the menu fixed in place */
+      right: -100%; /* Hides the menu off-screen initially */
+      top: 70px; /* Positions it below the navbar */
+      gap: 0; /* Removes unnecessary gaps */
+      flex-direction: column; /* Stacks menu items vertically */
+      background: rgba(255, 255, 255, 0.95); /* White background with slight transparency */
+      width: 100%; /* Makes it take the full width */
+      text-align: center; /* Centers text */
+      transition: 0.3s; /* Smooth sliding effect */
+      padding: 20px 0; /* Adds vertical padding */
+      backdrop-filter: blur(10px); /* Adds a blur effect behind the menu */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+  }
+
+  /* When active, slide the menu into view */
+  .nav-links.active {
+      right: 0;
+  }
+
+  /* Adds padding to each menu link */
+  .nav-links a {
+      padding: 15px 0;
+  }
+
+  /* Aligns the WhatsApp button correctly on mobile */
+  .whatsapp-button {
+      margin-left: 0; /* Resets left margin */
+      justify-content: center; /* Centers content */
+  }
+}
+
+
+
+
+
+
+
+
+
+/* home home home home home home home home */
+/* home home home home home home home home */
+/* home home home home home home home home */
+/* home home home home home home home home */
+
+
+/* services services services services services services services services */
+/* services services services services services services services services */
+/* services services services services services services services services */
+/* services services services services services services services services */
+
+
+
+
+
+
+
+/* Section styling with padding and a gradient background */
+.services-section {
+  padding: 80px 20px; /* Adds padding to the section */
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); /* Adds a gradient background */
+}
+
+/* Container to center content and limit width */
+.container {
+  max-width: 1200px; /* Limits the container width */
+  margin: 0 auto; /* Centers the container */
+}
+
+/* Title styling for the section */
+.section-titles {
+  text-align: center; /* Centers the title */
+  font-size: 2.5rem; /* Sets the font size */
+  margin-bottom: 1rem; /* Adds margin at the bottom */
+  color: #2d3436; /* Sets text color */
+}
+
+/* Lead text styling */
+.section-lead {
+  text-align: center; /* Centers the lead text */
+  font-size: 1.1rem; /* Sets font size */
+  color: #636e72; /* Sets the text color */
+  max-width: 600px; /* Limits the width */
+  margin: 0 auto 50px; /* Centers the text and adds margin at the bottom */
+}
+
+/* Grid for the services section */
+.services-grid {
+  display: grid; /* Uses grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates flexible columns */
+  gap: 30px; /* Adds space between grid items */
+}
+
+/* Service card styling */
+.service-card {
+  background: white; /* Sets background color */
+  padding: 30px; /* Adds padding */
+  border-radius: 15px; /* Rounds the corners */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Adds shadow */
+  transition: all 0.3s ease; /* Adds smooth transition for all changes */
+  text-align: center; /* Centers the text inside the card */
+  position: relative; /* Positions the card relatively */
+  overflow: hidden; /* Hides overflowing content */
+}
+
+/* Hover effect for service card */
+.service-card:hover {
+  transform: translateY(-10px); /* Moves the card up on hover */
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1); /* Adds a deeper shadow on hover */
+}
+
+/* Before pseudo-element for background animation */
+.service-card::before {
+  content: ''; /* No content, just a decorative element */
+  position: absolute; /* Positioned absolutely inside the card */
+  top: -50%; /* Moves it above the card */
+  left: -50%; /* Moves it to the left of the card */
+  width: 200%; /* Makes it bigger */
+  height: 200%; /* Makes it bigger */
+  background: linear-gradient(45deg, transparent, rgba(45, 52, 54, 0.03)); /* Adds a gradient background */
+  transform: rotate(45deg); /* Rotates the element */
+  transition: 0.5s; /* Adds smooth transition for transformations */
+}
+
+/* Hover effect for the background animation */
+.service-card:hover::before {
+  animation: serviceGlow 6s linear infinite; /* Starts animation on hover */
+}
+
+/* Keyframes for the background glow animation */
+@keyframes serviceGlow {
+  0% { transform: rotate(45deg) translateX(-50%); } /* Starts from the left */
+  100% { transform: rotate(45deg) translateX(50%); } /* Moves to the right */
+}
+
+/* Icon inside the service card */
+.service-icon {
+  width: 70px; /* Sets the width */
+  height: 70px; /* Sets the height */
+  background: #25D366; /* Sets the background color */
+  border-radius: 50%; /* Makes it circular */
+  margin: 0 auto 20px; /* Centers the icon and adds bottom margin */
+  display: flex; /* Uses flexbox to center the icon inside */
+  align-items: center; /* Vertically centers the icon */
+  justify-content: center; /* Horizontally centers the icon */
+  transition: 0.3s; /* Adds smooth transition on hover */
+}
+
+/* Icon inside the service card (icon font styling) */
+.service-icon i {
+  color: white; /* Sets the icon color */
+  font-size: 1.8rem; /* Sets the font size */
+}
+
+/* Hover effect for the icon */
+.service-card:hover .service-icon {
+  background: #2d3436; /* Changes background color on hover */
+  transform: scale(1.1); /* Slightly increases the size */
+}
+
+/* Heading inside the service card */
+.service-card h3 {
+  color: #2d3436; /* Sets text color */
+  margin-bottom: 15px; /* Adds margin at the bottom */
+  font-size: 1.3rem; /* Sets font size */
+}
+
+/* Paragraph inside the service card */
+.service-card p {
+  color: #636e72; /* Sets text color */
+  font-size: 0.95rem; /* Sets font size */
+  line-height: 1.6; /* Sets line height for better readability */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* Stacks the grid items in one column */
+    max-width: 500px; /* Limits the grid width */
+    margin: 0 auto; /* Centers the grid */
+  }
+}
+
+
+
+
+
+
+
+
+
+/* home home home home home home home home */
+/* home home home home home home home home */
+/* home home home home home home home home */
+/* home home home home home home home home */
+
+
+/* contact contact contact contact contact contact contact contact */
+/* contact contact contact contact contact contact contact contact */
+/* contact contact contact contact contact contact contact contact */
+/* contact contact contact contact contact contact contact contact */
+
+
+
+
+
+
+
+/* Contact Section */
+.contact-section {
+  background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact-header {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.section-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #25D366;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-5px);
+}
+
+.social-links {
+  margin-top: 40px;
+}
+
+.social-links p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.social-icon {
+  font-size: 30px;
+  margin: 0 10px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #25D366;
+}
+
+
+
+
+
+
+
+
+/* home home home home home home home home */
+/* home home home home home home home home */
+/* home home home home home home home home */
+/* home home home home home home home home */
+
+/* footer footer footer footer footer footer footer footer */
+/* footer footer footer footer footer footer footer footer */
+/* footer footer footer footer footer footer footer footer */
+/* footer footer footer footer footer footer footer footer */
+
+
+
+
+
+
+
+/* Add this to your styles.css */
+.site-footer {
+  background: #2d3436;
+  color: #ffffff;
+  padding: 50px 0 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-column h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background: #25D366;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-column ul li i {
+  color: #25D366;
+  width: 20px;
+  text-align: center;
+}
+
+.footer-column a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #25D366;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  font-size: 1.2rem;
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #25D366;
+  transform: translateY(-3px);
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255,255,255,0.1);
+  color: #ffffff;
+}
+
+.newsletter-form button {
+  background: #25D366;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: #1fa855;
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-column {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* services services services services services services services services */
+/* services services services services services services services services */
+/* services services services services services services services services */
+/* services services services services services services services services */
+
+
+
+/* hero hero hero hero hero hero hero hero */
+/* hero hero hero hero hero hero hero hero */
+/* hero hero hero hero hero hero hero hero */
+/* hero hero hero hero hero hero hero hero */
+
+/* Same the css of the herp portfolio */
+
+
+
+
+
+
+
+/* services services services services services services services services */
+/* services services services services services services services services */
+/* services services services services services services services services */
+/* services services services services services services services services */
+
+
+
+/* website section website section website section website section website section website section website section website section */
+/* website section website section website section website section website section website section website section website section */
+/* website section website section website section website section website section website section website section website section */
+/* website section website section website section website section website section website section website section website section */
+
+
+
+
+
+
+
+
+
+/* Add list styling for website creation cards */
+/* Center all text in service cards */
+.service-card {
+  text-align: center;
+}
+
+/* Adjust list styling for centered layout */
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: inline-block; /* Makes list respect text-align center */
+  text-align: left; /* Align list items to left within centered container */
+}
+
+.service-card li {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #636e72;
+  padding-left: 15px; /* Add space for bullet */
+}
+
+.service-card li::before {
+  content: "•";
+  color: #25D366;
+  position: absolute;
+  left: 0; /* Adjust bullet position */
+}
+
+/* Add to existing service-card styles */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes button to bottom */
+  min-height: 400px; /* Set minimum height for consistency */
+}
+
+/* Ensure buttons have consistent styling */
+.cta-button {
+  margin-top: auto; /* Pushes button to bottom of card */
+  align-self: center; /* Center button horizontally */
+  width: max-content; /* Prevent button from stretching full width */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* services services services services services services services services */
+/* services services services services services services services services */
+/* services services services services services services services services */
+/* services services services services services services services services */
+
+
+
+/* graphic design graphic design graphic design graphic design graphic design graphic design graphic design graphic design */
+/* graphic design graphic design graphic design graphic design graphic design graphic design graphic design graphic design */
+/* graphic design graphic design graphic design graphic design graphic design graphic design graphic design graphic design */
+/* graphic design graphic design graphic design graphic design graphic design graphic design graphic design graphic design */
+
+
+
+/* Add to existing services styles */
+.service-card.popular {
+  position: relative;
+  border: 2px solid #25D366;
+  transform: scale(1.02);
+}
+
+.service-card.popular::after {
+  content: 'Most Popular';
+  position: absolute;
+  top: -2px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.price {
+  color: #25D366;
+  font-size: 2rem;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.price span {
+  font-size: 1rem;
+  color: #636e72;
+  font-weight: 400;
+}
+
+.service-card li {
+  transition: transform 0.3s ease;
+  padding-left: 20px;
+}
+
+.service-card:hover li {
+  transform: translateX(5px);
+}
+
+.service-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: #25D366;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio */
+/* portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio */
+/* portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio */
+/* portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio */
+
+
+/* hero hero hero hero hero hero hero hero */
+/* hero hero hero hero hero hero hero hero */
+/* hero hero hero hero hero hero hero hero */
+/* hero hero hero hero hero hero hero hero */
+
+
+
+/* Add to styles.css */
+.minimal-hero {
+  position: relative;
+  min-height: 60vh;
+  background: linear-gradient(-45deg, #0f0f0f, #1a1a1a);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.animated-title {
+  color: white;
+  font-size: clamp(2rem, 8vw, 4rem);
+  margin-bottom: 1.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.animated-line {
+  width: 100px;
+  height: 2px;
+  background: #00d838;
+  margin: 0 auto;
+  animation: lineGrow 1.5s ease-out forwards;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes lineGrow {
+  0% { width: 0; opacity: 0; }
+  100% { width: 100px; opacity: 1; }
+}
+
+/* Add subtle background animation */
+.minimal-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, 
+    transparent 0%,
+    rgba(0,216,56,0.1) 50%,
+    transparent 100%
+  );
+  animation: bgScan 8s linear infinite;
+}
+
+@keyframes bgScan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+
+
+
+
+
+
+
+
+
+/* Portfolio Grid Section */
+.portfolio-grid-section {
+  padding: 4rem 0;
+  background: #f9f9f9;
+}
+
+.portfolio-category-title {
+  font-size: 2.2rem;
+  color: #2d3436;
+  margin: 3rem 0 1.5rem;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.portfolio-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  height: 400px;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-image {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  transform: translateY(0);
+}
+
+.portfolio-overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-overlay p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Project Details Page Styles */
+.project-details-section {
+  padding: 4rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.project-detail-image {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.project-info {
+  background: #f5f5f5;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio-item {
+    height: 300px;
+  }
+  
+  .portfolio-overlay {
+    padding: 1rem;
+  }
+}

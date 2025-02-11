@@ -1,0 +1,250 @@
+<!-- 1. DOCUMENT DECLARATION -->
+<!DOCTYPE html>
+<html lang="en"> <!-- Sets document language to English -->
+<head>
+    <!-- 2. META INFORMATION -->
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design setup -->
+    
+    <!-- 3. PAGE TITLE -->
+    <title>Prodigo Creative</title> 
+    
+    <!-- 4. CSS LINK -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links external stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="fav.svg" type="image/svg+xml">
+
+</head>
+
+<body>
+    <!-- 5. NAVIGATION BAR -->
+    <nav>
+        <!-- 5.1 LOGO SECTION -->
+        <a href="#" class="logo">
+          <img src="logo.svg" alt="Brand Logo">
+        </a>
+        
+<!-- Add this after the logo -->
+<div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+        <!-- 5.2 NAVIGATION LINKS CONTAINER -->
+        <div class="nav-links">
+            <!-- Regular navigation items -->
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="#">About</a>
+
+            <!-- 5.3 WHATSAPP BUTTON -->
+            <a href="https://wa.me/1234567890" 
+               class="whatsapp-button" 
+               target="_blank" 
+               rel="noopener noreferrer">
+               
+               <!-- WhatsApp SVG Icon -->
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    
+    <section>
+    <div class="slider-container"> <!-- Main container for the entire slider -->
+      <div class="slider-track"> <!-- This holds all the slides inside -->
+        
+        <!-- Slide 1: Background image and content -->
+        <div class="slide active" style="background-image: url('1.jpg')"> <!-- The first slide, marked active to be visible initially -->
+          <div class="slide-content"> <!-- Contains the text content of the slide -->
+            <h2>Discover New Horizons</h2> <!-- Title of the first slide -->
+            <p>Experience innovation like never before</p> <!-- Description for the first slide -->
+          </div>
+        </div>
+    
+        <!-- Slide 2: Background image and content -->
+        <div class="slide" style="background-image: url('2.jpg')"> <!-- Second slide -->
+          <div class="slide-content"> <!-- Contains the text content of the slide -->
+            <h2>Creative Solutions</h2> <!-- Title of the second slide -->
+            <p>Transforming ideas into reality</p> <!-- Description for the second slide -->
+          </div>
+        </div>
+    
+        <!-- Slide 3: Background image and content -->
+        <div class="slide" style="background-image: url('3.jpg')"> <!-- Third slide -->
+          <div class="slide-content"> <!-- Contains the text content of the slide -->
+            <h2>Digital Excellence</h2> <!-- Title of the third slide -->
+            <p>Quality that makes the difference</p> <!-- Description for the third slide -->
+          </div>
+        </div>
+    
+        <!-- Slide 4: Background image and content -->
+        <div class="slide" style="background-image: url('2.jpg')"> <!-- Fourth slide -->
+          <div class="slide-content"> <!-- Contains the text content of the slide -->
+            <h2>Future Forward</h2> <!-- Title of the fourth slide -->
+            <p>Leading the way in technology</p> <!-- Description for the fourth slide -->
+          </div>
+        </div>
+    
+      </div>
+      <div class="slider-indicators"></div> <!-- This section will contain the slider indicators for navigation -->
+    </div>
+  </section>
+    
+    
+
+
+
+
+  <section class="services-section"> <!-- This section holds the services information -->
+    <div class="container"> <!-- Container for the content inside the section -->
+      <h2 class="section-titles">Our Services</h2> <!-- Title for the section -->
+      <p class="section-lead">Transforming ideas into digital reality</p> <!-- Brief description under the title -->
+  
+      <div class="services-grid"> <!-- Grid container for displaying the service cards -->
+        <!-- Service 1 - Website Creation -->
+        <article class="service-card"> <!-- First service card for Website Creation -->
+          <div class="service-icon"> <!-- Icon for the service -->
+            <i class="fas fa-code"></i> <!-- Font Awesome icon representing coding (website creation) -->
+          </div>
+          <h3>Website Creation</h3> <!-- Service name -->
+          <p>Custom web solutions tailored to your brand's unique identity and business goals.</p> <!-- Service description -->
+        </article>
+  
+        <!-- Service 2 - Graphic Design -->
+        <article class="service-card"> <!-- Second service card for Graphic Design -->
+          <div class="service-icon"> <!-- Icon for the service -->
+            <i class="fas fa-palette"></i> <!-- Font Awesome icon representing design (palette) -->
+          </div>
+          <h3>Graphic Design</h3> <!-- Service name -->
+          <p>Visually stunning designs that communicate your message effectively.</p> <!-- Service description -->
+        </article>
+  
+        <!-- Service 3 - Sponsorship Management -->
+        <article class="service-card"> <!-- Third service card for Sponsorship Management -->
+          <div class="service-icon"> <!-- Icon for the service -->
+            <i class="fas fa-handshake"></i> <!-- Font Awesome icon representing partnership (handshake) -->
+          </div>
+          <h3>Sponsorship Management</h3> <!-- Service name -->
+          <p>Strategic partnership development and sponsorship campaign optimization.</p> <!-- Service description -->
+        </article>
+  
+        <!-- Service 4 - Social Media Management -->
+        <article class="service-card"> <!-- Fourth service card for Social Media Management -->
+          <div class="service-icon"> <!-- Icon for the service -->
+            <i class="fas fa-hashtag"></i> <!-- Font Awesome icon representing social media (hashtag) -->
+          </div>
+          <h3>Social Media Management</h3> <!-- Service name -->
+          <p>Complete social media strategies to boost engagement and grow your audience.</p> <!-- Service description -->
+        </article>
+      </div>
+    </div>
+  </section>
+  
+
+      
+  <section class="contact-section">
+    <div class="container">
+      <!-- Section Title and Description -->
+      <div class="contact-header">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-description">We'd love to hear from you! Whether you have a question, suggestion, or just want to connect, drop us a message.</p>
+      </div>
+      
+      <!-- Contact Form -->
+      <form action="https://formsubmit.co/azizjbeli1998@gmail.com" method="post" class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="phone">Your Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us what’s on your mind" required></textarea>
+        </div>
+      
+        <button type="submit" class="submit-btn">Send Message</button>
+      
+        <!-- Success and Failure Messages -->
+        <div id="successMessage" class="form-response"></div>
+        <div id="errorMessage" class="form-response"></div>
+      </form>
+  </section>
+  
+  
+  
+
+
+
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Footer Columns -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact Info</h4>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> 123 Business Street, TN</li>
+        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+        <li><i class="fas fa-envelope"></i> contact@brand.com</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>Newsletter</h4>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 Brand. All rights reserved. | <a href="#">Privacy Policy</a></p>
+  </div>
+</footer>
+
+
+
+
+
+  
+  <!-- 6. JAVASCRIPT LINK -->
+  <script src="main.js"></script> <!-- Links external JavaScript file -->
+  </body>
+  </html>
+  
